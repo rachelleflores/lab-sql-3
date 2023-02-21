@@ -49,3 +49,7 @@ WHERE EXTRACT(MONTH FROM(rental_date)) = 2;
 SELECT COUNT(rental_id)
 FROM rental
 WHERE MONTH(rental_date) = 2;
+
+SELECT COUNT(rental_id)
+FROM rental
+WHERE rental_date >= "2006-02-01";
